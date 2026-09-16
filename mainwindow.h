@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QPaintEvent>
+#include <QPainterPath>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,8 +20,14 @@ public:
 protected:
     void paintEvent(QPaintEvent *event) override;
 
+private slots:
+    void on_horizontalSlider_valueChanged(int value);
+
 private:
     Ui::MainWindow *ui;
+    int currentDepth = 4;
+
+    void addKochLine(QPainterPath &path, const QPointF &p1, const QPointF &p2, int depth);
 };
 
 #endif // MAINWINDOW_H
