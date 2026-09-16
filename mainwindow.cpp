@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    resize(800, 800); // окно
+    resize(1500, 1500); // окно
 }
 
 MainWindow::~MainWindow()
@@ -54,14 +54,14 @@ void MainWindow::paintEvent(QPaintEvent *event) {
     // центр правильного треугольника
     double cx = width() / 2.0;
     double cy = height() / 2.0;
-    double R = 250.0; // радиус описанной окружности
+    double R = 500.0; // радиус описанной окружности
 
     // вершины исходного треугольника
     QPointF p1(cx, cy - R); // верхняя вершина
     QPointF p2(cx - R * cos(M_PI / 6.0), cy + R * sin(M_PI / 6.0)); // нижняя левая
     QPointF p3(cx + R * cos(M_PI / 6.0), cy + R * sin(M_PI / 6.0)); // нижняя правая
 
-    int depth = 7; // глубина
+    int depth = 10; // глубина, больше 10 принудительное завершение
 
     // рисуем три стороны снежинки (соблюдать порядок - по часовой стрелке)
     drawKochLine(painter, p1, p3, depth);
