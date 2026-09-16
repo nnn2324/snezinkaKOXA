@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QPaintEvent>
 #include <QPainterPath>
 
 QT_BEGIN_NAMESPACE
@@ -25,9 +24,11 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    int currentDepth = 4;
+    int currentDepth = 0;
+    QPainterPath cachedPath;
 
     void addKochLine(QPainterPath &path, const QPointF &p1, const QPointF &p2, int depth);
+    void updateSnowflakePath();
 };
 
 #endif // MAINWINDOW_H
