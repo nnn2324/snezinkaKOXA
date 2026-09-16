@@ -1,0 +1,9 @@
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/snez.dir
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/edit_cache.dir
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/rebuild_cache.dir
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/list_install_components.dir
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/install.dir
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/install/local.dir
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/install/strip.dir
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/snez_autogen_timestamp_deps.dir
+/home/nnn231488/snez/build/Desktop_Qt_6_11_2_Debug/CMakeFiles/snez_autogen.dir
