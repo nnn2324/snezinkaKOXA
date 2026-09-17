@@ -20,15 +20,15 @@ protected:
     void paintEvent(QPaintEvent *event) override;
 
 private slots:
-    void on_horizontalSlider_valueChanged(int value);
+    void on_horizontalSlider_valueChanged(int value); //для ползунка, смена глубины
 
 private:
     Ui::MainWindow *ui;
     int currentDepth = 0;
-    QPainterPath cachedPath;
+    QPainterPath cachedPath; //храним готовые линии снежники чтобы не тупило
 
     void addKochLine(QPainterPath &path, const QPointF &p1, const QPointF &p2, int depth);
-    void updateSnowflakePath();
+    void updateSnowflakePath(); //создает базовый треугольник и запускает построение снежинки
 };
 
 #endif // MAINWINDOW_H
