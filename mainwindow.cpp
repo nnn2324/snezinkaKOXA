@@ -54,7 +54,7 @@ void MainWindow::updateSnowflakePath() {
     double cx = width() / 2.0;
     double cy = (height() - 50) / 2.0 + 10;
     double R = 200.0; //радиус
-
+    // три базовых точки треугольник
     QPointF p1(cx, cy - R);
     QPointF p2(cx - R * sqrt(3.0) / 2.0, cy + R / 2.0);
     QPointF p3(cx + R * sqrt(3.0) / 2.0, cy + R / 2.0);
@@ -72,7 +72,7 @@ void MainWindow::paintEvent(QPaintEvent *event) {
     painter.setRenderHint(QPainter::Antialiasing, true);
 
     // цвет и толщина
-    painter.setPen(QPen(Qt::blue, 1));
+    painter.setPen(QPen(QColor(255,155,255), 1));
     painter.drawPath(cachedPath);
 }
 
