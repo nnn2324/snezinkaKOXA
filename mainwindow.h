@@ -25,7 +25,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     int currentDepth = 0;
-    QPainterPath cachedPath; //храним готовые линии снежники чтобы не тупило
+    QPainterPath cachedPath; //храним готовые расчеты чтобы не тупило
 
     void addKochLine(QPainterPath &path, const QPointF &p1, const QPointF &p2, int depth);
     void updateSnowflakePath(); //создает базовый треугольник и запускает построение снежинки

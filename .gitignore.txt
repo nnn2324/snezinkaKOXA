@@ -1,3 +1,12 @@
-/build/
-.qtcreator/
-*.user
+# Сборочные директории Qt / CMake
+build-*/
+*.pro.user*
+.qt/
+.cmake/
+
+# Бинарники
+*.exe
+*.dll
+*.so
+*.dylib
+app*.app/
